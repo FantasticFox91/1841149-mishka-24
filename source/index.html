@@ -109,7 +109,7 @@
       <section class="about">
         <h2 class="visualy-hidden">О нас</h2>
         <div class="container">
-          <div class="advanatges">
+          <div class="advantages">
             <h3 class="advantages__heading title">Коротко о нас:</h3>
             <ul class="advantages__list">
               <li class="advantages__item">
@@ -133,7 +133,7 @@
             </ul>
           </div>
           <div class="reviews">
-            <h3 class="reviews-heading title">Отзывы</h3>
+            <h3 class="reviews__heading title">Отзывы</h3>
  <!-- Reviews slider -->
             <div class="reviews-slider">
               <blockquote class="reviews-slider__item">
@@ -195,7 +195,7 @@
 <!-- Footer -->
     <footer class="footer">
       <div class="conteiner">
-        <div class="footer_logo logo">
+        <div class="footer__logo logo">
           <a class="logo__link">
             <img class="logo__link-img" src="img/mishka-logo-mobile.svg" alt="Логтип магазина 'Мишка'." width="86" height="35">
           </a>
@@ -236,5 +236,26 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal-wrapper">
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post" >
+          <h2 class="title modal-form__heading">Добавить в корзину</h2>
+          Выберите размер:
+            <label class="modal-form__label">
+              <input class="modal-form__control--checkbox" type="radio" name="size" value="small">
+              S
+            </label>
+            <label class="modal-form__label">
+              <input class="modal-form__control--checkbox" type="radio" name="size" value="medium">
+              M
+            </label>
+            <label class="modal-form__label">
+              <input class="modal-form__control--checkbox" type="radio" name="size" value="Large">
+              L
+            </label>
+          <button class="button modal-form__button">Добавить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

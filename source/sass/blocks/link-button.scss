@@ -1,0 +1,9 @@
+.link-button {
+  @include fonts($main-font, 18px, 20px, 700, $regular-text-color);
+  display: block;
+  padding: 16px 38px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid $regular-text-color;
+}

@@ -1,32 +1,7 @@
-@import "../variables.scss";
-@import "../mixins.scss";
-@import "../global.scss";
-
 .footer {
   background-color: $wave-decorative-color;
 }
 
 .footer__logo {
   display: none;
-}
-
-.social-list {
-  @include lists();
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid $footer-mobile-line-color;
-}
-
-.social-list__item:not(:last-child) {
-  margin-right: 41px;
-}
-
-.developer-info {
-  display: flex;
-  justify-content: center;
-}
-
-.developer-info__link {
-  @include fonts($main-bold-font, 19px, 18px, 700, $bold-text-color);
-  text-decoration: none;
 }

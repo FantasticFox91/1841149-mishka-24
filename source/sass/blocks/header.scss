@@ -1,21 +1,19 @@
-@import "../variables.scss";
-@import "../mixins.scss";
-@import "../global.scss";
-
 .header {
   margin-bottom: 31px;
+  background-color: $wave-decorative-color;
 }
 
 .header__heading {
-  @include fonts($main-bold-font, 27px, 30px, 700, $bold-text-color);
   padding: 73px 0 120px;
+  font-size: 27px;
   text-align: center;
-  background-color: $wave-decorative-color;
 }
 
 .header__heading--image {
   background-image: url("../img/header-bg.jpg");
   background-position: 40% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__list {
@@ -23,9 +21,10 @@
 }
 
 .header__link {
-  @include fonts($main-bold-font, 19px, 24px, 700, $white-color);
   display: block;
   padding: 24px 132px 31px 30px;
+  font-size: 19px;
+  color: $white-color;
   text-decoration: none;
 }
 

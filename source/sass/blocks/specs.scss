@@ -1,0 +1,23 @@
+.specs {
+  border-collapse: collapse;
+  margin-bottom: 27px;
+}
+
+.specs__heading {
+  font-size: 15px;
+  font-weight: 400;
+  color: $regular-text-color;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.specs__description {
+  font-size: 15px;
+  font-weight: 400;
+  color: $regular-text-color;
+  text-align: left;
+}
+
+.specs__row {
+  border-bottom: 1px solid $border-color;
+}

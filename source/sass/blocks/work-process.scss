@@ -1,8 +1,5 @@
-@import "../variables.scss";
-@import "../mixins.scss";
-@import "../global.scss";
-
 .work-process__heading {
+  font: inherit;
   position: relative;
   padding-left: 57px;
 
@@ -15,6 +12,6 @@
 }
 
 .work-process__text {
-  @include fonts($main-regular-font, 13px, 24px, 400);
+  @include fonts($main-font, 13px, 24px, 400);
   padding-left: 34px;
 }

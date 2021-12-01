@@ -1,18 +1,14 @@
-@import "../variables.scss";
-@import "../mixins.scss";
-@import "../global.scss";
-
 .card__link {
-  @include fonts($main-bold-font, 17px, 24px, 700, $bold-text-color);
+  color: inherit;
   text-decoration: none;
 }
 
 .card__item-description {
-  @include fonts($main-regular-font, 13px, 30px, 400, $regular-text-color);
+  @include fonts($main-font, 13px, 30px, 400, $regular-text-color);
 }
 
 .card__price {
-  @include fonts($main-bold-font, 15px, 24px, 700, $bold-text-color);
+  font-size: 15px;
 }
 
 .card__description {

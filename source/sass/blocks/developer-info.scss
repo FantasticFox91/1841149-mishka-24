@@ -1,0 +1,9 @@
+.developer-info {
+  display: flex;
+  justify-content: center;
+}
+
+.developer-info__link {
+  @include fonts($main-font, 19px, 18px, 700, $bold-text-color);
+  text-decoration: none;
+}

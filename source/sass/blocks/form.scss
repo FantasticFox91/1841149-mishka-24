@@ -1,7 +1,3 @@
-@import "../variables.scss";
-@import "../mixins.scss";
-@import "../global.scss";
-
 .form__category {
   border: none;
   margin: 0;
@@ -9,7 +5,8 @@
 }
 
 .form__category-name {
-  @include fonts($main-bold-font, 17px, 16px, 700, $accent-color);
+  line-height: 16px;
+  color: $accent-color;
   text-transform: uppercase;
 }
 
@@ -18,14 +15,14 @@
 }
 
 .form__control {
-  @include fonts($main-bold-font, 17px, 18px, 700, $bold-text-color);
+  line-height: 18px;
 }
 
 .form__input {
   border: none;
 
   &::placeholder {
-    @include fonts($main-regular-font, 17px, 18px, 400, $bold-text-color);
+    @include fonts($main-font, 17px, 18px, 400, $bold-text-color);
     opacity: 0.3;
   }
 }
@@ -55,5 +52,5 @@
 }
 
 .form__required-info {
-  @include fonts($main-regular-font, 14px, 16px, 400);
+  @include fonts($main-font, 14px, 16px, 400);
 }

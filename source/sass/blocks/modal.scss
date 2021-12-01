@@ -1,7 +1,3 @@
-@import "../variables.scss";
-@import "../mixins.scss";
-@import "../global.scss";
-
 .modal {
   display: none;
   position: fixed;
@@ -28,11 +24,16 @@
 }
 
 .modal__radio-heading {
-  @include fonts($main-regular-font, 15px, 30px, 400);
+  @include fonts($main-font, 15px, 30px, 400);
 }
 
-.modal-form__button {
-  @include fonts($main-bold-font, 17px, 16px, 700, $white-color);
+.modal__button {
+  @include fonts($main-font, 17px, 16px, 700, $white-color);
   background-color: $accent-color;
   border: none;
+}
+
+.modal__label {
+  line-height: 16px;
+  color: $regular-text-color;
 }

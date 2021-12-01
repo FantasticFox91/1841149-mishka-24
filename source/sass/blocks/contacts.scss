@@ -1,11 +1,5 @@
-@import "../variables.scss";
-@import "../mixins.scss";
-@import "../global.scss";
-
-.contacts-table__heading,
-.contacts-table__email,
-.contacts-table__adress {
-  @include fonts($main-regular-font, 14px, 30px, 400);
+.contacts-table__text {
+  @include fonts($main-font, 14px, 30px, 400);
 }
 
 .contacts-table__email {

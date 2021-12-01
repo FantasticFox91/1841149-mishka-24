@@ -1,0 +1,10 @@
+.social-list {
+  @include lists();
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $footer-mobile-line-color;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 41px;
+}

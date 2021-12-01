@@ -1,0 +1,45 @@
+.header {
+  margin-bottom: 31px;
+  background-color: $wave-decorative-color;
+}
+
+.header__heading {
+  padding: 73px 0 120px;
+  font-size: 27px;
+  text-align: center;
+}
+
+.header__heading--image {
+  background-image: url("../img/header-bg.jpg");
+  background-position: 40% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__list {
+  @include lists();
+}
+
+.header__link {
+  display: block;
+  padding: 24px 132px 31px 30px;
+  font-size: 19px;
+  color: $white-color;
+  text-decoration: none;
+}
+
+.header__link--interior {
+  background: url("../img/interior.svg") no-repeat 90% 40%;
+}
+
+.header__link--toy {
+  background: url("../img/toy.svg") no-repeat 90% 40%;
+}
+
+.header__item:first-child {
+  background-color: $accent-color;
+}
+
+.header__item:last-child {
+  background-color: $dark-accent-color;
+}

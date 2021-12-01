@@ -1,1 +1,68 @@
-// Начните писать стили здесь
+@import "variables.scss";
+@import "fonts.scss";
+@import "mixins.scss";
+@import "global.scss";
+@import "blocks/page-main.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/container.scss";
+@import "blocks/title.scss";
+@import "blocks/link-button.scss";
+
+//Top menu
+@import "blocks/top-menu.scss";
+// Logo block
+@import "blocks/logo.scss";
+// Main navigation block
+@import "blocks/main-nav.scss";
+// Deals list block
+@import "blocks/deals-list.scss";
+// Site list block
+@import "blocks/site-list.scss";
+// User list block
+@import "blocks/user-list.scss";
+
+// Header
+@import "blocks/header.scss";
+
+// Featured block
+@import "blocks/featured.scss";
+// Specifications block
+@import "blocks/specs.scss";
+
+// About block
+@import "blocks/about.scss";
+
+// Reviews block
+@import "blocks/reviews.scss";
+
+// Slider in about block
+@import "blocks/slider.scss";
+
+// Contacts block
+@import "blocks/contacts.scss";
+
+// Footer block
+@import "blocks/footer.scss";
+
+// Catalog page
+// Ctalog block
+@import "blocks/catalog.scss";
+@import "blocks/card.scss";
+
+// Work process block
+@import "blocks/work-process.scss";
+@import "blocks/video.scss";
+
+// Form page
+// Order-form
+@import "blocks/order-form.scss";
+
+// Form block
+@import "blocks/form.scss";
+// Social list block
+@import "blocks/social-list.scss";
+// Developer info block
+@import "blocks/developer-info.scss";
+
+// Modal block
+@import "blocks/modal.scss";

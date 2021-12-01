@@ -1,0 +1,56 @@
+.form__category {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__category-name {
+  line-height: 16px;
+  color: $accent-color;
+  text-transform: uppercase;
+}
+
+.form__list {
+  @include lists();
+}
+
+.form__control {
+  line-height: 18px;
+}
+
+.form__input {
+  border: none;
+
+  &::placeholder {
+    @include fonts($main-font, 17px, 18px, 400, $bold-text-color);
+    opacity: 0.3;
+  }
+}
+
+.form__input--textarea {
+  min-height: 142px;
+  width: 100%;
+  border: 2px solid $bold-text-color;
+}
+
+.form__input[type="text"] {
+  width: 100%;
+}
+
+.form__input--tel {
+  width: 100%;
+  background: url("../img/phone.svg") no-repeat right;
+}
+
+.form__input--email {
+  width: 100%;
+  background: url("../img/mail.svg") no-repeat right;
+}
+
+.form__button {
+  background-color: transparent;
+}
+
+.form__required-info {
+  @include fonts($main-font, 14px, 16px, 400);
+}

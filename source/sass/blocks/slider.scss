@@ -1,0 +1,20 @@
+.slider__item {
+  display: none;
+}
+
+.slider__item--active {
+  display: block;
+}
+
+.slider__nav-button {
+  width: 130px;
+  height: 52px;
+  background: url("../../img/slider-arrow.svg") no-repeat;
+  background-position: center center;
+  border: 1px solid $border-color;
+}
+
+.slider__nav-button--next {
+  transform: rotate(180deg);
+  border-right: none;
+}

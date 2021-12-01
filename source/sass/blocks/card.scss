@@ -1,0 +1,27 @@
+.card__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card__item-description {
+  @include fonts($main-font, 13px, 30px, 400, $regular-text-color);
+}
+
+.card__price {
+  font-size: 15px;
+}
+
+.card__description {
+  padding: 0 28px;
+}
+
+.card__cart {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 28px;
+}
+
+.card__button {
+  border: none;
+  background-color: transparent;
+}

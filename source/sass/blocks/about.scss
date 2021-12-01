@@ -1,0 +1,8 @@
+.advantages__list {
+  @include lists;
+}
+
+.advantages__item {
+  line-height: 20px;
+  padding-top: 54px;
+}

@@ -1,0 +1,20 @@
+.contacts-table__text {
+  @include fonts($main-font, 14px, 30px, 400);
+}
+
+.contacts-table__email {
+  border-bottom: 1px solid $interactive-elements-color;
+}
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__marker {
+  position: absolute;
+  top: 153px;
+  right: 118px;
+  width: 67px;
+  height: 100px;
+  background: url("../../img/map-pin.svg");
+}

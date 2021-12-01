@@ -1,0 +1,22 @@
+.featured__badge {
+  line-height: 20px;
+  color: $accent-color;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.featured__text {
+  font-size: 15px;
+  font-weight: 400;
+  color: $regular-text-color;
+}
+
+.featured__img {
+  margin: 0;
+}
+
+.featured__price {
+  padding: 25px 0;
+  color: $regular-text-color;
+  text-align: center;
+}

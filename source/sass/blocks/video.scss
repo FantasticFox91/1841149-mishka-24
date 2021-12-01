@@ -1,0 +1,17 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+@import "../global.scss";
+
+.video {
+  position: relative;
+}
+
+.video__play-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 77px;
+  border: none;
+  background: url("../img/play.svg") no-repeat 50% 50%;
+}

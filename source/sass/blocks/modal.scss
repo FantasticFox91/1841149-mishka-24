@@ -1,0 +1,38 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+@import "../global.scss";
+
+.modal {
+  display: none;
+  position: fixed;
+  min-width: 320px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal--open {
+  display: block;
+}
+
+.modal__container {
+  position: absolute;
+  top: 30%;
+  background-color: $white-color;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal__radio-heading {
+  @include fonts($main-regular-font, 15px, 30px, 400);
+}
+
+.modal-form__button {
+  @include fonts($main-bold-font, 17px, 16px, 700, $white-color);
+  background-color: $accent-color;
+  border: none;
+}

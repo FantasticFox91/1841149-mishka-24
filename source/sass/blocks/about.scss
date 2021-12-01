@@ -1,0 +1,12 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+@import "../global.scss";
+
+.advantages__list {
+  @include lists;
+}
+
+.advantages__item {
+  @include fonts($main-bold-font, 17px, 20px, 700, $bold-text-color);
+  padding-top: 54px;
+}

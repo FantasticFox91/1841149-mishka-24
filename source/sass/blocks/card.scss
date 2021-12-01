@@ -1,0 +1,31 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+@import "../global.scss";
+
+.card__link {
+  @include fonts($main-bold-font, 17px, 24px, 700, $bold-text-color);
+  text-decoration: none;
+}
+
+.card__item-description {
+  @include fonts($main-regular-font, 13px, 30px, 400, $regular-text-color);
+}
+
+.card__price {
+  @include fonts($main-bold-font, 15px, 24px, 700, $bold-text-color);
+}
+
+.card__description {
+  padding: 0 28px;
+}
+
+.card__cart {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 28px;
+}
+
+.card__button {
+  border: none;
+  background-color: transparent;
+}

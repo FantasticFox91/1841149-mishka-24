@@ -1,0 +1,54 @@
+@import "mixins.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.page-main {
+  flex-grow: 1;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+.title {
+  @include fonts($main-bold-font, 25px, 30px, 700, $bold-text-color);
+  margin: 0;
+}
+
+.link-button {
+  display: block;
+  padding: 16px 38px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $regular-text-color;
+  border: 2px solid $regular-text-color;
+
+  @include fonts($main-bold-font, 18px, 20px, 700, $bold-text-color);
+}

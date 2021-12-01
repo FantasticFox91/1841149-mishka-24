@@ -1,0 +1,26 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+@import "../global.scss";
+
+.contacts-table__heading,
+.contacts-table__email,
+.contacts-table__adress {
+  @include fonts($main-regular-font, 14px, 30px, 400);
+}
+
+.contacts-table__email {
+  border-bottom: 1px solid $interactive-elements-color;
+}
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__marker {
+  position: absolute;
+  top: 153px;
+  right: 118px;
+  width: 67px;
+  height: 100px;
+  background: url("../../img/map-pin.svg");
+}

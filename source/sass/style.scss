@@ -1,1 +1,48 @@
-// Начните писать стили здесь
+@import "variables.scss";
+@import "fonts.scss";
+@import "global.scss";
+@import "mixins.scss";
+
+
+//Top menu
+@import "blocks/top-menu.scss";
+
+// Header
+@import "blocks/header.scss";
+
+// Featured block
+@import "blocks/featured.scss";
+
+// About block
+@import "blocks/about.scss";
+
+// Reviews block
+@import "blocks/reviews.scss";
+
+// Slider in about block
+@import "blocks/slider.scss";
+
+// Contacts block
+@import "blocks/contacts.scss";
+
+// Footer block
+@import "blocks/footer.scss";
+
+// Catalog page
+// Ctalog block
+@import "blocks/catalog.scss";
+@import "blocks/card.scss";
+
+// Work process block
+@import "blocks/work-process.scss";
+@import "blocks/video.scss";
+
+// Form page
+// Order-form
+@import "blocks/order-form.scss";
+
+// Form block
+@import "blocks/form.scss";
+
+// Modal block
+@import "blocks/modal.scss";

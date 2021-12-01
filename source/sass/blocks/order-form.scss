@@ -1,0 +1,7 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+@import "../global.scss";
+
+.order-form__greetings {
+  @include fonts($main-regular-font, 13px, 24px, 400);
+}

@@ -1,5 +1,28 @@
+.slider {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 175px;
+
+    .link-button {
+      position: absolute;
+      right: 175px;
+      top: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    .link-button {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
 .slider__item {
   display: none;
+  margin-bottom: 32px;
 }
 
 .slider__item--active {
@@ -12,9 +35,19 @@
   background: url("../../img/slider-arrow.svg") no-repeat;
   background-position: center center;
   border: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    border: none;
+  }
 }
 
 .slider__nav-button--next {
   transform: rotate(180deg);
   border-right: none;
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    border: none;
+  }
 }

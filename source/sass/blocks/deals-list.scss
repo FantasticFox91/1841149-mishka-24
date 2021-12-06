@@ -1,3 +1,18 @@
+.deals-list {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 100px;
+  }
+}
+
+.deals-list__item {
+  padding: 20px 30px;
+}
+
 .deals-list__link {
   @include fonts($main-font, 15px, 24px, 700, $bold-text-color);
   text-decoration: none;

@@ -1,3 +1,13 @@
 .logo {
   margin-left: auto;
 }
+
+.top-menu .logo {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 50%;
+  }
+}

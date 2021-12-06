@@ -1,6 +1,8 @@
 .top-menu {
   .container {
-    min-height: 79px;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
     border-bottom: 1px solid $border-color;
   }
 }

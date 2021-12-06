@@ -16,5 +16,8 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    width: 100px;
+    height: 34px;
+    background: url("../img/logo-footer.svg") 50% 50%;
   }
 }

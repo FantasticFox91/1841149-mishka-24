@@ -1,12 +1,19 @@
+.reviews__heading {
+  margin-bottom: 14px;
+}
+
 .reviews__item {
   margin: 0;
 }
 
 .reviews__text {
   @include fonts($main-font, 15px, 30px, 400);
+  margin: 0;
+  margin-bottom: 34px;
 }
 
 .reviews__author-name {
+  display: block;
   font-style: normal;
 }
 
@@ -18,4 +25,11 @@
 
 .reviews__slider-control {
   display: flex;
+  justify-content: center;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -55px;
+    justify-content: flex-end;
+  }
 }

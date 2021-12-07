@@ -1,8 +1,5 @@
 .top-menu {
-  .container {
-    display: flex;
-    align-items: center;
-    min-height: 80px;
-    border-bottom: 1px solid $border-color;
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $white-color 62%,#e1e1e1 63%, #f9f9f9 63%);
   }
 }

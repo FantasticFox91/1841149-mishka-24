@@ -1,13 +1,16 @@
 .main-nav {
-  position: relative;
-  margin-left: auto;
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .main-nav__toggle {
+  display: none;
   position: relative;
   width: 20px;
   height: 14px;
-  margin-bottom: 20px;
   border: none;
   background-color: transparent;
 
@@ -34,19 +37,6 @@
     transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
   }
 
-  &:hover::after {
-    top: 5px;
-    width: 21px;
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &:hover::before {
-    top: 5px;
-    width: 21px;
-    transform: rotate(-45deg);
-  }
-
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -54,30 +44,37 @@
 
 .main-nav__list {
   @include lists();
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    width: auto;
   }
 }
 
 .main-nav__wrapper {
-  position: absolute;
-  top: 80px;
-  left: 0;
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  background-color: $white-color;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    top: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
-.main-nav__wrapper--open {
-  display: block;
+.main-nav__logo {
+  order: 0;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
 }
 
 .main-nav__delivery {
@@ -88,9 +85,69 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 100px;
     display: block;
-    padding: 20px 30px;
+    padding: 20px 5px;
+    order: 5;
+  }
+}
+
+.main-nav--close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 0;
+
+  .main-nav__wrapper {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: $white-color;
+  }
+
+  .main-nav__toggle {
+    display: block;
+    margin-left: auto;
+    z-index: 2;
+  }
+
+  .main-nav__list {
+    display: none;
+  }
+}
+
+.main-nav--open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 0;
+
+  .main-nav__wrapper {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: $white-color;
+  }
+
+  .main-nav__toggle {
+    display: block;
+    z-index: 2;
+    margin-left: auto;
+
+    &::after {
+      top: 5px;
+      width: 21px;
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::before {
+      top: 5px;
+      width: 21px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .main-nav__list:not(:last-child) {
+    display: block;
   }
 }

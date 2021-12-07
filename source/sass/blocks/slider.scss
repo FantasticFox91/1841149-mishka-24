@@ -3,20 +3,14 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 0 0 175px;
-
-    .link-button {
-      position: absolute;
-      right: 175px;
-      top: 0;
-    }
   }
+}
 
+.slider__link-button {
   @media (min-width: $tablet-width) {
-    .link-button {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 

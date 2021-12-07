@@ -1,12 +1,12 @@
 .footer {
   background-color: $wave-decorative-color;
+}
 
-  .container {
-    @media (min-width: $tablet-width) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+.footer__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

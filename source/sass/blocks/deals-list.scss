@@ -3,9 +3,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    position: absolute;
-    left: 0;
-    top: 100px;
+    order: 4;
   }
 }
 

@@ -1,5 +1,11 @@
 .top-menu {
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, $white-color 62%, #e1e1e1 63%, #f9f9f9 63%);
+    background: linear-gradient(to bottom, $white-color 57%, #e1e1e1 57%, #f9f9f9 58%);
+  }
+}
+
+.top-menu__container {
+  @media (max-width: 767px) {
+    padding: 0;
   }
 }

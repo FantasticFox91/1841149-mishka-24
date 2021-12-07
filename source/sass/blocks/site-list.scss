@@ -25,6 +25,12 @@
   }
 }
 
+.site-list__item:first-child {
+  @media (min-width: $tablet-width) {
+    padding-left: 5px;
+  }
+}
+
 .site-list__link {
   text-decoration: none;
   color: inherit;

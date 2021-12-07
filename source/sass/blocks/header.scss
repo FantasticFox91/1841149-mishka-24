@@ -1,31 +1,71 @@
 .header {
-  margin-bottom: 31px;
-  background-color: $wave-decorative-color;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
 }
 
-.header__heading {
-  padding: 73px 0 120px;
-  font-size: 27px;
-  text-align: center;
-}
-
-.header__heading--image {
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 289px;
   background-image: url("../img/header-bg.jpg");
   background-position: 40% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    min-height: 627px;
+  }
+}
+
+.header__heading {
+  margin: 0;
+  font-size: 27px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .header__list {
   @include lists();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+  }
+}
+
+.header__item {
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    padding: 0 36px;
+    min-width: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 50px;
+    min-width: 525px;
+  }
 }
 
 .header__link {
   display: block;
-  padding: 24px 132px 31px 30px;
+  max-width: 130px;
+  padding: 24px 0 28px 0;
   font-size: 19px;
   color: $white-color;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .header__link--interior {
@@ -42,4 +82,8 @@
 
 .header__item:last-child {
   background-color: $dark-accent-color;
+}
+
+.header__list-container {
+  padding: 0;
 }

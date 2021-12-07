@@ -1,0 +1,34 @@
+.contacts-table {
+  margin-bottom: 62px;
+}
+
+.contacts-table__controler {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.contacts-table__text:last-child {
+  width: 230px;
+}
+
+.contacts-table__text {
+  @include fonts($main-font, 14px, 30px, 400);
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.contacts-table__heading {
+  min-width: 52px;
+  vertical-align: top;
+}
+
+.specs__description {
+  padding-left: 25px;
+}

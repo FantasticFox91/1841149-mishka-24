@@ -1,0 +1,37 @@
+.advantages {
+  @media (min-width: $desktop-width) {
+    padding: 0 175px;
+  }
+}
+
+.advantages__list {
+  @include lists;
+  margin-bottom: 57px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 60px 100px;
+    grid-auto-flow: column;
+  }
+}
+
+.advantages__heading {
+  margin-bottom: 29px;
+}
+
+.advantages__item {
+  margin-bottom: 29px;
+  line-height: 20px;
+  padding-top: 54px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

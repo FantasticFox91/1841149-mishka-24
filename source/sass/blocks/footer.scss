@@ -2,6 +2,22 @@
   background-color: $wave-decorative-color;
 }
 
+.footer__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .footer__logo {
   display: none;
+  margin-left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 100px;
+    height: 34px;
+    background: url("../img/logo-footer.svg") 50% 50%;
+  }
 }

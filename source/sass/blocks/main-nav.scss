@@ -1,8 +1,13 @@
 .main-nav {
-  margin-left: auto;
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .main-nav__toggle {
+  display: none;
   position: relative;
   width: 20px;
   height: 14px;
@@ -32,32 +37,117 @@
     transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
   }
 
-  &:hover::after {
-    top: 5px;
-    width: 21px;
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &:hover::before {
-    top: 5px;
-    width: 21px;
-    transform: rotate(-45deg);
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
 .main-nav__list {
   @include lists();
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: auto;
+  }
 }
 
 .main-nav__wrapper {
-  display: block;
-  background-color: $white-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__logo {
+  order: 0;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
 }
 
 .main-nav__delivery {
+  display: none;
   font-size: 15px;
   font-weight: 400;
   color: $regular-text-color;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 20px 5px;
+    order: 5;
+  }
+}
+
+.main-nav--close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 0;
+
+  .main-nav__wrapper {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: $white-color;
+  }
+
+  .main-nav__toggle {
+    display: block;
+    margin-left: auto;
+    z-index: 2;
+  }
+
+  .main-nav__list {
+    display: none;
+  }
+}
+
+.main-nav--open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 0;
+
+  .main-nav__wrapper {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: $white-color;
+  }
+
+  .main-nav__toggle {
+    display: block;
+    z-index: 2;
+    margin-left: auto;
+
+    &::after {
+      top: 5px;
+      width: 21px;
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::before {
+      top: 5px;
+      width: 21px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .main-nav__list:not(:last-child) {
+    display: block;
+  }
 }

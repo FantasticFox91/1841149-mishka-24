@@ -1,4 +1,38 @@
+.user-list {
+  @media (min-width: $tablet-width) {
+    width: 80%;
+    justify-content: flex-end;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+    width: auto;
+  }
+}
+
+.user-list__item {
+  padding: 30px 30px;
+  text-align: center;
+  border-bottom: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid $border-color;
+    border-bottom: none;
+  }
+}
+
+.user-list__item:last-child {
+  padding-right: 5px;
+}
+
 .user-list__link {
   text-decoration: none;
   color: inherit;
+}
+
+.user-list__item--search .user-list__link:last-child {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

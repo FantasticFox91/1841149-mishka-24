@@ -1,23 +1,32 @@
 .specs {
   border-collapse: collapse;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
+  }
 }
 
 .specs__heading {
+  padding: 0;
+  padding-right: 30px;
   font-size: 15px;
+  line-height: 20px;
   font-weight: 400;
   color: $regular-text-color;
   text-align: left;
-  padding-right: 20px;
 }
 
 .specs__description {
+  padding: 0;
   font-size: 15px;
+  line-height: 20px;
   font-weight: 400;
   color: $regular-text-color;
   text-align: left;
 }
 
 .specs__row {
+  height: 40px;
   border-bottom: 1px solid $border-color;
 }

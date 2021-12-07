@@ -1,13 +1,33 @@
-.contacts-table__text {
-  @include fonts($main-font, 14px, 30px, 400);
+.contacts {
+  min-width: 320px;
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: $desktop-width;
+  }
 }
 
-.contacts-table__email {
-  border-bottom: 1px solid $interactive-elements-color;
+.contacts__map-container {
+  position: relative;
 }
 
 .contacts__map {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    grid-row: span 2;
+  }
 }
 
 .contacts__marker {
@@ -17,4 +37,33 @@
   width: 67px;
   height: 100px;
   background: url("../../img/map-pin.svg");
+}
+
+.contacts__link-button {
+  align-self: center;
+}
+
+.contacts__heading {
+  position: relative;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      @include pseudo(47px, 81px);
+      right: 0;
+      background: url("../img/flag.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      left: -100px;
+    }
+  }
+}
+
+.contacts__link {
+  font: inherit;
+  color: $regular-text-color;
+  text-decoration: none;
 }

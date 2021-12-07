@@ -1,9 +1,17 @@
 .developer-info {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.developer-info__text {
+  @include fonts($main-font, 19px, 18px, 700, $bold-text-color);
+  margin: 0;
+  margin-right: 25px;
 }
 
 .developer-info__link {
   @include fonts($main-font, 19px, 18px, 700, $bold-text-color);
   text-decoration: none;
+  padding: 31px 0;
 }

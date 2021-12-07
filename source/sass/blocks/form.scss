@@ -1,24 +1,73 @@
 .form__category {
-  border: none;
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
+  border: none;
+}
+
+.form__category--comments {
+  margin-bottom: 0;
+}
+
+.form__category .container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 120px;
+  }
+}
+
+.form__category:nth-child(2n) {
+  @media (min-width: $tablet-width) {
+    background-color: $wave-decorative-color;
+  }
 }
 
 .form__category-name {
+  margin-bottom: 30px;
   line-height: 16px;
   color: $accent-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    float: left;
+  }
+}
+
+.form__category--personal .form__control {
+  margin-bottom: 17px;
+}
+
+.form__category--comments .form-category-name {
+  margin-bottom: 23px;
+}
+
+.form__list--color {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .form__list {
   @include lists();
 }
 
+.form__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .form__control {
+  display: block;
+  margin-bottom: 24px;
   line-height: 18px;
 }
 
 .form__input {
+  margin-bottom: 22px;
+  padding: 10px 5px;
   border: none;
 
   &::placeholder {
@@ -30,6 +79,8 @@
 .form__input--textarea {
   min-height: 142px;
   width: 100%;
+  margin-bottom: 0;
+  padding: 17px 17px 0 17px;
   border: 2px solid $bold-text-color;
 }
 
@@ -52,5 +103,7 @@
 }
 
 .form__required-info {
+  margin: 0;
+
   @include fonts($main-font, 14px, 16px, 400);
 }

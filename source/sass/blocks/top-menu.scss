@@ -1,6 +1,11 @@
 .top-menu {
-  .container {
-    min-height: 79px;
-    border-bottom: 1px solid $border-color;
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $white-color 57%, #e1e1e1 57%, #f9f9f9 58%);
+  }
+}
+
+.top-menu__container {
+  @media (max-width: 767px) {
+    padding: 0;
   }
 }

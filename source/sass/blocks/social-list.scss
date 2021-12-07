@@ -2,9 +2,15 @@
   @include lists();
   display: flex;
   justify-content: center;
+  align-items: center;
   border-bottom: 1px solid $footer-mobile-line-color;
 }
 
-.social-list__item:not(:last-child) {
+.social-list__item {
   margin-right: 41px;
+  padding: 31px 0;
+}
+
+.social-list__item:last-child {
+  margin-right: 0;
 }

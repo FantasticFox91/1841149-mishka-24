@@ -1,13 +1,39 @@
 .video {
   position: relative;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 683px;
+    grid-row: span 2;
+    margin-bottom: 0;
+  }
 }
 
 .video__play-button {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   width: 100px;
   height: 77px;
   border: none;
   background: url("../img/play.svg") no-repeat 50% 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video__preview {
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 683px;
+  }
 }

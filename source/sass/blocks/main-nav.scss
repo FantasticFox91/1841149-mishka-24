@@ -92,62 +92,67 @@
 }
 
 .main-nav--close {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 22px 0;
+  @media (max-width: 767px) {
 
-  .main-nav__wrapper {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    background-color: $white-color;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 0;
 
-  .main-nav__toggle {
-    display: block;
-    margin-left: auto;
-    z-index: 2;
-  }
+    .main-nav__wrapper {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      background-color: $white-color;
+    }
 
-  .main-nav__list {
-    display: none;
+    .main-nav__toggle {
+      display: block;
+      margin-left: auto;
+      z-index: 2;
+    }
+
+    .main-nav__list {
+      display: none;
+    }
   }
 }
 
 .main-nav--open {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 22px 0;
+  @media (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 0;
 
-  .main-nav__wrapper {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    background-color: $white-color;
-  }
-
-  .main-nav__toggle {
-    display: block;
-    z-index: 2;
-    margin-left: auto;
-
-    &::after {
-      top: 5px;
-      width: 21px;
-      transform: rotate(45deg);
-      box-shadow: none;
+    .main-nav__wrapper {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      background-color: $white-color;
     }
 
-    &::before {
-      top: 5px;
-      width: 21px;
-      transform: rotate(-45deg);
-    }
-  }
+    .main-nav__toggle {
+      display: block;
+      z-index: 2;
+      margin-left: auto;
 
-  .main-nav__list:not(:last-child) {
-    display: block;
+      &::after {
+        top: 5px;
+        width: 21px;
+        transform: rotate(45deg);
+        box-shadow: none;
+      }
+
+      &::before {
+        top: 5px;
+        width: 21px;
+        transform: rotate(-45deg);
+      }
+    }
+
+    .main-nav__list:not(:last-child) {
+      display: block;
+    }
   }
 }

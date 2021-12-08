@@ -1,17 +1,94 @@
+.work-process {
+  padding-bottom: 33px;
+  margin-bottom: 58px;
+}
+
+.work-process__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  margin: 0 auto;
+  border: 1px solid $border-color;
+  padding: 22px 0 33px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    align-items: start;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    width: 1050px;
+    grid-template-columns: 683px 1fr;
+    column-gap: 80px;
+    padding: 0;
+  }
+}
+
 .work-process__heading {
+  margin: 0;
+  margin-bottom: 26px;
+  padding-left: 91px;
   font: inherit;
   position: relative;
-  padding-left: 57px;
 
   &::before {
     @include pseudo(32px, 22px);
     top: 10px;
-    left: 10px;
+    left: 40px;
     background: url("../img/camera.svg") no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 0;
+
+    &::before {
+      top: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: end;
+    margin-bottom: 28px;
+    padding-left: 0;
+    padding-top: 59px;
+    padding-right: 82px;
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
   }
 }
 
 .work-process__text {
   @include fonts($main-font, 13px, 24px, 400);
-  padding-left: 34px;
+  margin: 0;
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+.work-process__description {
+  padding: 33px 34px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 33px 40px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-right: 33px;
+  }
+}
+
+.work-process__button {
+  padding: 14px 11px;
 }

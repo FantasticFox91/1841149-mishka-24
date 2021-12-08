@@ -19,6 +19,7 @@
 
 .specs__description {
   padding: 0;
+  padding-left: 25px;
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
@@ -29,8 +30,4 @@
 .specs__row {
   height: 40px;
   border-bottom: 1px solid $border-color;
-}
-
-.specs__description {
-  padding-left: 25px;
 }

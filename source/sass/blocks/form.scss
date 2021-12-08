@@ -3,21 +3,29 @@
   margin-bottom: 30px;
   padding: 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 175px 50px 45px;
+  }
 }
 
 .form__category--comments {
-  margin-bottom: 0;
+  margin-bottom: 17px;
 }
 
 .form__category .container {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: max-content 1fr;
-    column-gap: 120px;
+    column-gap: 87px;
   }
 }
 
-.form__category:nth-child(2n) {
+.form__category:nth-child(odd) {
   @media (min-width: $tablet-width) {
     background-color: $wave-decorative-color;
   }
@@ -34,12 +42,16 @@
   }
 }
 
-.form__category--personal .form__control {
-  margin-bottom: 17px;
-}
+.form__category--text {
+  .form__control {
+    margin-bottom: 17px;
+    padding-left: 0;
+  }
 
-.form__category--comments .form-category-name {
-  margin-bottom: 23px;
+  .form__input {
+    margin-left: -5px;
+    border-bottom: 2px solid $regular-text-color;
+  }
 }
 
 .form__list--color {
@@ -53,16 +65,28 @@
   @include lists();
 }
 
+.form__list--personal {
+  .form__control {
+    margin-right: 20px;
+  }
+}
+
 .form__item {
   @media (min-width: $tablet-width) {
     display: flex;
+    align-items: baseline;
   }
 }
 
 .form__control {
   display: block;
   margin-bottom: 24px;
+  padding-left: 60px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
 }
 
 .form__input {
@@ -73,6 +97,10 @@
   &::placeholder {
     @include fonts($main-font, 17px, 18px, 400, $bold-text-color);
     opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+    }
   }
 }
 
@@ -104,6 +132,26 @@
 
 .form__required-info {
   margin: 0;
+  margin-bottom: 30px;
 
   @include fonts($main-font, 14px, 16px, 400);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    order: 2;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.form__bottom {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px;
+  }
 }

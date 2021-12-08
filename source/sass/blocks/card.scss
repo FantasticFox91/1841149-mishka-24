@@ -1,24 +1,74 @@
+.card {
+  width: 262px;
+  border: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 334px 335px;
+    grid-template-rows: 167px 167px;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .card__link {
   color: inherit;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    grid-row: span 2;
+    font-size: 20px;
+  }
+}
+
+.card__img {
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 462px;
+  }
 }
 
 .card__item-description {
+  margin: 0;
+
   @include fonts($main-font, 13px, 30px, 400, $regular-text-color);
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
 }
 
 .card__price {
+  margin: 0;
   font-size: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .card__description {
-  padding: 0 28px;
+  padding: 34px 28px 0;
+
+  @media (min-width: $desktop-width) {
+    min-height: 115px;
+  }
 }
 
 .card__cart {
   display: flex;
   justify-content: space-between;
-  padding: 0 28px;
+  align-items: flex-end;
+  padding: 0 28px 23px;
 }
 
 .card__button {

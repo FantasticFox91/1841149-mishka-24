@@ -20,12 +20,17 @@
 
 .header__heading {
   margin: 0;
+  padding: 73px 0;
   font-size: 27px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
   }
 }
 

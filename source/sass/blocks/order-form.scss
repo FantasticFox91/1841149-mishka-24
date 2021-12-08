@@ -1,12 +1,18 @@
+.order-form {
+  margin-bottom: 55px;
+}
+
 .order-form__greetings {
   @include fonts($main-font, 13px, 24px, 400);
   margin: 0;
   margin-bottom: 30px;
-  padding: 0 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 175px;
   }
 }

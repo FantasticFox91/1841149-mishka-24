@@ -1,3 +1,28 @@
+.catalog {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+}
+
 .catalog__list {
+  display: grid;
+  row-gap: 30px;
+
   @include lists();
+
+  @media (min-width: $tablet-width) {
+    row-gap: 54px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 51px;
+  }
+}
+
+.catalog__item {
+  margin: 0 auto;
 }

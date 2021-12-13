@@ -43,7 +43,7 @@
   display: flex;
 
   .user-list__link {
-    padding-right: 8px;
+    padding: 32px 5px 30px 32px;
   }
 
   .user-list__link:last-child {
@@ -54,4 +54,3 @@
     }
   }
 }
-

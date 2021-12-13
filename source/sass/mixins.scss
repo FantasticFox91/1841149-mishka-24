@@ -12,11 +12,9 @@
   list-style-type: $list-style-type;
 }
 
-@mixin pseudo($w, $h, $top: 0, $left: 0, $content: "", $position: absolute) {
+@mixin pseudo($w, $h, $content: "", $position: absolute) {
   content: $content;
   position: $position;
   width: $w;
   height: $h;
-  top: $top;
-  left: $left;
 }

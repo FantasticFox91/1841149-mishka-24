@@ -1,14 +1,35 @@
 .about {
-  padding-top: 28px;
-  padding-bottom: 52px;
+  position: relative;
+  padding-top: 31px;
+  padding-bottom: 51px;
+
+  &::after {
+    @include pseudo(100vw, 6px);
+    bottom: 0;
+    background: url("../img/zigzag.svg");
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 56px;
     padding-bottom: 83px;
+    background: url("../img/review-bg.png") no-repeat 0 638px;
+
+    &::after {
+      width: 100vw;
+      height: 17px;
+      background-size: cover;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 63px;
     padding-bottom: 83px;
+    background-position: 50px 659px;
+
+    &::after {
+      width: 1150px;
+      height: 23px;
+      background-size: cover;
+    }
   }
 }

@@ -5,7 +5,7 @@
 
 
   @media (min-width: $tablet-width) {
-    padding-top: 51px;
+    padding-top: 48px;
     padding-bottom: 57px;
   }
 
@@ -85,13 +85,15 @@
 .contacts__heading {
   position: relative;
   margin-bottom: 27px;
-  padding-top: 16px;
+  padding-top: 17px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 48px;
 
     &::after {
-      @include pseudo(47px, 81px,-7px, 618px);
+      @include pseudo(47px, 81px);
+      top: -6px;
+      right: 3px;
       background: url("../img/flag.svg");
     }
   }

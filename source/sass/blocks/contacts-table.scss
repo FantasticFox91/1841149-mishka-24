@@ -1,5 +1,15 @@
 .contacts-table {
-  margin-bottom: 62px;
+  margin-bottom: 61px;
+  border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts-table__controler {
@@ -13,10 +23,32 @@
 }
 
 .contacts-table__text:last-child {
-  width: 230px;
+  width: 250px;
+}
+
+.contacts-table__row {
+  vertical-align: top;
+  height: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .contacts-table__text {
+  padding-left: 31px;
+
+  @include fonts($main-font, 14px, 30px, 400);
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    padding-left: 22px;
+  }
+}
+
+.contacts-table__heading {
+  min-width: 46px;
+
   @include fonts($main-font, 14px, 30px, 400);
 
   @media (min-width: $tablet-width) {
@@ -24,7 +56,6 @@
   }
 }
 
-.contacts-table__heading {
-  min-width: 52px;
-  vertical-align: top;
+.contacts-table__email {
+  min-height: 60px;
 }

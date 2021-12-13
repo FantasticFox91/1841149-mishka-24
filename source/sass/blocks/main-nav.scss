@@ -66,6 +66,7 @@
 }
 
 .main-nav__logo {
+  padding-top: 12px;
   order: 0;
 
   @media (min-width: $tablet-width) {
@@ -86,7 +87,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding: 20px 5px;
+    padding: 20px 0;
     order: 5;
   }
 }
@@ -97,10 +98,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 22px 0;
+    padding: 32px 0;
 
     .main-nav__wrapper {
       position: absolute;
+      z-index: 1;
       top: 10px;
       left: 0;
       background-color: $white-color;
@@ -123,10 +125,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 22px 0;
+    padding: 32px 0;
 
     .main-nav__wrapper {
       position: absolute;
+      z-index: 1;
       top: 10px;
       left: 0;
       background-color: $white-color;

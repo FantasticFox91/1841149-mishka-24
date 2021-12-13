@@ -1,3 +1,14 @@
 .about {
-  margin-bottom: 45px;
+  padding-top: 28px;
+  padding-bottom: 52px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+    padding-bottom: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 63px;
+    padding-bottom: 83px;
+  }
 }

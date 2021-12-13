@@ -1,21 +1,46 @@
 .contacts {
   min-width: 320px;
-  margin-bottom: 40px;
+  padding-bottom: 39px;
+  padding-top: 21px;
 
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 175px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 51px;
+    padding-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 370px 1fr;
+    grid-template-rows: 413px 1fr;
+    column-gap: 5px;
+    padding: 70px 0 105px 200px;
     margin: 0 auto;
     max-width: $desktop-width;
+  }
+
+  .container {
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
   }
 }
 
 .contacts__map-container {
   position: relative;
+
+  iframe {
+    display: block;
+    width: 100vw;
+
+    @media (min-width: $tablet-width) {
+      height: 457px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 527px;
+    }
+  }
 }
 
 .contacts__map {
@@ -23,47 +48,74 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-row: span 2;
+    margin-bottom: 0;
+    padding-top: 8px;
+    justify-content: start;
   }
 }
 
 .contacts__marker {
-  position: absolute;
-  top: 153px;
-  right: 118px;
-  width: 67px;
-  height: 100px;
+  @include pseudo(67px,100px,145px,138px);
+
   background: url("../../img/map-pin.svg");
 }
 
 .contacts__link-button {
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    margin: 0 auto;
+    padding: 14px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .contacts__heading {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
+  padding-top: 16px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+
     &::after {
-      @include pseudo(47px, 81px);
-      right: 0;
+      @include pseudo(47px, 81px,-7px, 618px);
       background: url("../img/flag.svg");
     }
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 88px;
+    margin-bottom: 35px;
+
     &::after {
-      left: -100px;
+      top: 70px;
+      left: -112px;
     }
   }
 }
 
 .contacts__link {
+  position: relative;
+  padding-bottom: 3px;
   font: inherit;
   color: $regular-text-color;
   text-decoration: none;
+
+  &::after {
+    @include pseudo(167px,1px,21px,1px);
+    background-color: $accent-color;
+  }
 }

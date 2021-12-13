@@ -1,5 +1,5 @@
 .main-nav {
-  padding-top: 25px;
+  padding-top: 10px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -7,10 +7,11 @@
 }
 
 .main-nav__toggle {
-  display: none;
   position: relative;
+  display: none;
   width: 20px;
   height: 14px;
+  padding-right: 30px;
   border: none;
   background-color: transparent;
 

@@ -12,14 +12,16 @@
 }
 
 .user-list__item:last-child {
-  margin-right: -30px;
+  @media (min-width: $tablet-width) {
+    margin-right: -30px;
+  }
 }
 
 .user-list__link {
   display: block;
   text-decoration: none;
   color: inherit;
-  padding: 33px 32px 30px 32px;
+  padding: 27px 5px 27px 30px;
   border-bottom: 1px solid $border-color;
 
   @media (min-width: $tablet-width) {
@@ -39,18 +41,11 @@
   }
 }
 
-.user-list__item--search {
-  display: flex;
+.user-list__link:last-child {
+  padding-left: 30px;
 
-  .user-list__link {
-    padding: 32px 5px 30px 32px;
-  }
-
-  .user-list__link:last-child {
-    padding-left: 0;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
+

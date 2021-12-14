@@ -4,11 +4,15 @@
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid $footer-mobile-line-color;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .social-list__item {
   margin-right: 41px;
-  padding: 31px 0;
+  padding: 23px 0;
 }
 
 .social-list__item:last-child {

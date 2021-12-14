@@ -10,13 +10,21 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     right: 0;
-    top: 0;
+    top: -4px;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 1px;
+    padding-right: 38px;
+    padding-left: 38px;
   }
 }
 
 .slider__item {
   display: none;
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 }
 
 .slider__item--active {
@@ -24,14 +32,14 @@
 }
 
 .slider__nav-button {
-  width: 130px;
+  width: 100%;
   height: 52px;
-  background: url("../../img/slider-arrow.svg") no-repeat;
+  background: url("../img/slider-arrow.svg") no-repeat;
   background-position: center center;
   border: 1px solid $border-color;
 
   @media (min-width: $tablet-width) {
-    width: 100px;
+    width: 50px;
     border: none;
   }
 }

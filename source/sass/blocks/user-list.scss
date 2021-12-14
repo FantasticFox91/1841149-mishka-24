@@ -29,7 +29,7 @@
   margin-right: 24px;
   vertical-align: sub;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin-right: 31px;
   }
 }
@@ -41,10 +41,14 @@
 }
 
 .user-list__link--cart {
+  @media (min-width: $tablet-width) {
+    padding: 33px 0 32px 30px;
+  }
+
   .user-list__icon {
     margin-right: 21px;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       margin-right: 26px;
     }
   }

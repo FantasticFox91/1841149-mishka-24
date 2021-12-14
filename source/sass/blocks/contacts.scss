@@ -28,10 +28,11 @@
 
 .contacts__map-container {
   position: relative;
+  width: 100%;
 
   iframe {
     display: block;
-    width: 100vw;
+    width: 100%;
 
     @media (min-width: $tablet-width) {
       height: 457px;

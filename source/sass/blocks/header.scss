@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     &::after {
-      @include pseudo(100vw, 24px);
+      @include pseudo(100%, 24px);
       bottom: -14px;
       z-index: 1;
       background: url("../img/zigzag-fill.svg");

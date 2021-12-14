@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     background: linear-gradient(to bottom, $white-color 58%, #e1e1e1 59%, #f9f9f9 59%);
+    border-bottom: none;
   }
 }
 

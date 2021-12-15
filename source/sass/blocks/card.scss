@@ -1,5 +1,5 @@
 .card {
-  width: 262px;
+  width: 260px;
   border: 1px solid $border-color;
 
   @media (min-width: $tablet-width) {
@@ -39,11 +39,17 @@
 
 .card__item-description {
   margin: 0;
+  margin-top: 5px;
+  margin-bottom: 42px;
 
   @include fonts($main-font, 13px, 30px, 400, $regular-text-color);
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -57,10 +63,19 @@
 }
 
 .card__description {
-  padding: 34px 28px 0;
+  padding: 21px 27px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 28px;
+    padding-left: 33px;
+    padding-right: 60px;
+  }
 
   @media (min-width: $desktop-width) {
     min-height: 115px;
+    padding-top: 23px;
+    padding-right: 50px;
+    padding-left: 28px;
   }
 }
 
@@ -68,7 +83,16 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 0 28px 23px;
+  padding: 0 27px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 28px;
+    padding-left: 27px;
+  }
 }
 
 .card__button {

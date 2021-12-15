@@ -51,6 +51,18 @@
   }
 }
 
+.heeader__inner-heading {
+  padding: 76px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 35px 20px 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 95px;
+  }
+}
+
 .header__list {
   @include lists();
 

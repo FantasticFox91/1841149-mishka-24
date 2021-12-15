@@ -204,6 +204,24 @@
   .form__control {
     padding-left: 60px;
     min-height: 42px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 78px;
+    }
+  }
+
+  .form__label--radio {
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $regular-text-color;
+
+    @media (min-width: $tablet-width) {
+      width: 52px;
+      height: 52px;
+    }
   }
 
   .form__input:checked + .form__label--radio {
@@ -222,24 +240,6 @@
         top: 14px;
         left: 14px;
       }
-    }
-
-    @media (min-width: $tablet-width) {
-      padding-left: 78px;
-    }
-  }
-
-  .form__label--radio {
-    position: absolute;
-    left: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid $regular-text-color;
-
-    @media (min-width: $tablet-width) {
-      width: 52px;
-      height: 52px;
     }
   }
 }

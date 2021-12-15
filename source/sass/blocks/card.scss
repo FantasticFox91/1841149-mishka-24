@@ -40,7 +40,6 @@
 .card__item-description {
   margin: 0;
   margin-top: 5px;
-  margin-bottom: 42px;
 
   @include fonts($main-font, 13px, 30px, 400, $regular-text-color);
 
@@ -80,19 +79,40 @@
 }
 
 .card__cart {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 0 27px 25px;
+  padding: 42px 27px 25px;
+
+  &::before {
+    @include pseudo(204px,1px);
+    top: 18px;
+    left: 27px;
+    background-color: $border-color;
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 33px;
+
+    &::before {
+      top: 93px;
+      left: 27px;
+      width: 268px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 28px;
     padding-left: 27px;
+
+    &::before {
+      top: 4px;
+      left: 33px;
+      width: 256px;
+    }
   }
+
 }
 
 .card__button {

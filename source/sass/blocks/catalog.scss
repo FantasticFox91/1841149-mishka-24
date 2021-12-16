@@ -1,8 +1,15 @@
 .catalog {
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 53px;
+    padding-top: 80px;
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 130px;
+    padding-bottom: 56px;
   }
 }
 
@@ -13,13 +20,13 @@
   @include lists();
 
   @media (min-width: $tablet-width) {
-    row-gap: 54px;
+    row-gap: 52px;
     justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 51px;
+    column-gap: 49px;
   }
 }
 

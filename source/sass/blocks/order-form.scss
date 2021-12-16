@@ -21,10 +21,11 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 7px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 175px;
+    margin-bottom: 0;
   }
 }

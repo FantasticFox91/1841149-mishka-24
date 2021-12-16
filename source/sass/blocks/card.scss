@@ -83,7 +83,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 42px 27px 25px;
+  padding: 40px 25px 27px 27px;
 
   &::before {
     @include pseudo(204px,1px);
@@ -115,6 +115,7 @@
 }
 
 .card__button {
+  padding: 0;
   border: none;
   background-color: transparent;
 }

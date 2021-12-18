@@ -15,4 +15,12 @@
 .deals-list__link {
   @include fonts($main-font, 15px, 24px, 700, $bold-text-color);
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

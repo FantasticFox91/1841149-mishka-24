@@ -13,11 +13,25 @@
 .footer__logo {
   display: none;
   margin-left: 0;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: block;
-    width: 100px;
-    height: 34px;
-    background: url("../img/logo-footer.svg") 50% 50%;
+  }
+}
+
+.footer__icon--interactive {
+  &:hover {
+    path {
+      fill: $accent-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    path {
+      fill: $accent-color;
+    }
   }
 }

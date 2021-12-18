@@ -8,7 +8,6 @@ mainNavigation.classList.add("main-nav--close");
 burgerBtn.addEventListener("click", () =>
 checkClass(mainNavigation,"main-nav--close") ? toggleClass(mainNavigation,"main-nav--open") : toggleClass(mainNavigation,"main-nav--close"));
 
-
 /*
 Функция для проверки на перполнение контентом, взята с прошлого курса
 function getTextNodesIn(elem, opt_fnFilter) {

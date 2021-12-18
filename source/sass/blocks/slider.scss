@@ -37,6 +37,15 @@
   background: url("../img/slider-arrow.svg") no-repeat;
   background-position: center center;
   border: 1px solid $border-color;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     width: 50px;

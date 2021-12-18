@@ -1,8 +1,9 @@
 .modal {
-  display: none;
   position: fixed;
-  min-width: 320px;
-  height: 100vh;
+  z-index: 2;
+  display: none;
+  width: 100%;
+  height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -12,22 +13,94 @@
 
 .modal__container {
   position: absolute;
-  top: 30%;
+  top: 50%;
+  left: 50%;
+  padding: 29px 0 46px;
   background-color: $white-color;
+  border-top: 1px solid $modal-border-color;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    min-width: 566px;
+    padding-top: 37px;
+    padding-bottom: 39px;
+    border: 1px solid $modal-border-color;
+  }
 }
 
 .modal__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 55px;
+  }
+}
+
+.modal__heading {
+  margin-bottom: 15px;
+  padding: 0 50px 0 59px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 57px;
+  }
 }
 
 .modal__radio-heading {
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: center;
+
   @include fonts($main-font, 15px, 30px, 400);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+}
+
+.modal__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(82px, 1fr));
+  column-gap: 7px;
+
+  @include lists();
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.modal__item {
+  position: relative;
+  padding: 14px 33px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.modal__label--radio {
+  @include pseudo(100%,100%);
+  top: -3px;
+  left: 0;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  cursor: pointer;
 }
 
 .modal__button {
+  padding: 18px 0;
+  cursor: pointer;
+
   @include fonts($main-font, 17px, 16px, 700, $white-color);
   background-color: $accent-color;
   border: none;
@@ -36,4 +109,8 @@
 .modal__label {
   line-height: 16px;
   color: $regular-text-color;
+}
+
+.modal__input:checked + .modal__label {
+  border-color: $accent-color;
 }

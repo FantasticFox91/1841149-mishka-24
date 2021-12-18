@@ -9,7 +9,6 @@ function initMap() {
 
   new google.maps.Marker({
     position: { lat: 59.93872031587833, lng: 30.32304628352043},
-    icon: "../img/map-pin.svg",
     map: map,
   });
 }

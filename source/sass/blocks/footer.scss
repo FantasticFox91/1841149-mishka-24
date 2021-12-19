@@ -21,6 +21,14 @@
 }
 
 .footer__icon--interactive {
+  padding-top: 25px;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 53px;
+    padding-bottom: 53px;
+  }
+
   &:hover {
     path {
       fill: $accent-color;

@@ -9,3 +9,15 @@
     opacity: 0.3;
   }
 }
+
+.logo__link-img {
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
+}

@@ -12,7 +12,13 @@
 
 .social-list__item {
   margin-right: 41px;
-  padding: 23px 0;
+  padding-top: 25px;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 51px;
+    padding-bottom: 57px;
+  }
 }
 
 .social-list__item:last-child {

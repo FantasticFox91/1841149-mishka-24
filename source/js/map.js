@@ -1,3 +1,6 @@
+document.querySelector("iframe").remove();
+document.querySelector(".contacts__marker").remove();
+
 let map;
 
 function initMap() {

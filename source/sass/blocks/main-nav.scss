@@ -72,11 +72,14 @@
   order: 0;
 
   @media (min-width: $tablet-width) {
+    padding-top: 6px;
+    margin-left: -1px;
     order: 1;
   }
 
   @media (min-width: $desktop-width) {
     order: 2;
+    margin-left: -63px;
   }
 }
 

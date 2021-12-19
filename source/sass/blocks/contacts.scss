@@ -49,15 +49,21 @@
     max-width: 527px;
     grid-row: span 2;
     margin-bottom: 0;
-    padding-top: 8px;
+    margin-top: 8px;
     justify-content: start;
+  }
+
+  iframe {
+    position: relative;
   }
 }
 
 .contacts__marker {
-  @include pseudo(67px,100px,145px,138px);
-
+  @include pseudo(67px,100px);
+  top: 45%;
+  left: 50%;
   background: url("../../img/map-pin.svg");
+  transform: translate(-50%, -50%);
 }
 
 .contacts__link-button {

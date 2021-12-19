@@ -91,7 +91,7 @@
 
 .modal__label--radio {
   @include pseudo(100%,100%);
-  top: -3px;
+  top: 0;
   left: 0;
   border: 2px solid rgba(68, 68, 68, 0.1);
   cursor: pointer;

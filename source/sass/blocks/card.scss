@@ -2,6 +2,14 @@
   width: 260px;
   border: 1px solid $border-color;
 
+  &:hover .card__bottom {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active .card__bottom {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 334px 335px;
@@ -76,6 +84,16 @@
     padding-right: 50px;
     padding-left: 28px;
   }
+
+  .card__link {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .card__cart {
@@ -115,7 +133,25 @@
 }
 
 .card__button {
-  padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    path {
+      fill: $accent-color;
+      opacity: 0.3;
+    }
+  }
+
+  &:active {
+    path {
+      fill: $accent-color;
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 0;
+  }
 }

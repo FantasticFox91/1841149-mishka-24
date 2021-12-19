@@ -5,7 +5,7 @@
   @media (min-width: $tablet-width) {
     &::after {
       @include pseudo(100%, 24px);
-      bottom: -14px;
+      bottom: -7px;
       z-index: 1;
       background: url("../img/zigzag-fill.svg");
     }
@@ -17,18 +17,39 @@
   align-items: center;
   justify-content: center;
   min-height: 282px;
-  background-image: url("../img/header-bg.jpg");
-  background-position: 40% 20%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("../img/header-bg.jpg") no-repeat center;
+  background-size: 320px auto;
+  background-position-y: -18px;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/header-bg@2x.jpg") no-repeat center;
+    background-size: 320px auto;
+    background-position-y: -18px;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 560px;
     align-items: stretch;
+    background: url("../img/header-bg-tablet.jpg") no-repeat center;
+    background-size: 768px auto;
+    background-position-y: -67px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/header-bg-tablet@2x.jpg") no-repeat center;
+      background-size: 768px auto;
+      background-position-y: -67px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-height: 562px;
+    background: url("../img/header-bg-desktop.jpg") no-repeat center;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/header-bg-desktop@2x.jpg") no-repeat center;
+      background-size: 1150px auto;
+      background-position-y: -65px;
+    }
   }
 }
 
@@ -74,58 +95,82 @@
 }
 
 .header__item {
-  padding: 0 30px;
-
   @media (min-width: $tablet-width) {
     flex-grow: 1;
-    padding: 0 36px;
     min-width: 334px;
+    max-width: 525px;
   }
 }
 
 .header__link {
+  position: relative;
   display: block;
-  max-width: 130px;
-  padding: 24px 0 31px 0;
+  padding: 24px 0 31px 30px;
   font-size: 19px;
   color: $white-color;
   text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-top: 26px;
+    padding-left: 36px;
+    padding-bottom: 37px;
+
+    &:hover {
+      transform: translateY(-5px);
+
+      path {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      path {
+        opacity: 0.3;
+      }
+    }
   }
 }
 
 .header__link--interior {
-  background: url("../img/interior.svg") no-repeat 87% 56%;
+  background-color: $accent-color;
 
-  @media (min-width: $desktop-width) {
-    background-position: 92% 57%;
+  &:hover {
+    background-color: $light-accent-color;
   }
 }
 
 .header__link--toy {
-  background: url("../img/toy.svg") no-repeat 90% 49%;
-
-  @media (min-width: $tablet-width) {
-    background-position: 88% 55%;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-position: 92% 57%;
-  }
-}
-
-.header__item:first-child {
-  background-color: $accent-color;
-}
-
-.header__item:last-child {
   background-color: $dark-accent-color;
+
+  &:hover {
+    background-color: $links-actions-color;
+  }
 }
 
 .header__list-container {
   padding: 0;
+}
+
+.header__icon {
+  position: absolute;
+  top: 23px;
+  right: 36px;
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
+    right: 36px;
+  }
+}
+
+.header__icon--toy {
+  top: 21px;
+  right: 27px;
+
+  @media (min-width: $tablet-width) {
+    top: 31px;
+    right: 34px;
+  }
 }

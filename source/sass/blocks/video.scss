@@ -11,6 +11,7 @@
 
   @media (min-width: $desktop-width) {
     width: 683px;
+    height: 455px;
     grid-row: span 2;
     margin-bottom: 0;
   }
@@ -23,14 +24,30 @@
   width: 100px;
   height: 77px;
   border: none;
-  background: url("../img/play.svg") no-repeat 50% 50%;
+  background: url("../img/play.svg") no-repeat;
+  background-size: cover;
   transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
+
+  &:hover {
+    transform: scale(1.2) translate(-40%, -40%);
+  }
+
+  &:active {
+    transform: scale(0.8) translate(-60%, -60%);
+    opacity: 0.6;
+  }
 }
 
 .video__preview {
   @media (min-width: $tablet-width) {
     width: 668px;
-    height: 454px;
+    height: 455px;
+
+    picture {
+      height: 455px;
+    }
   }
 
   @media (min-width: $desktop-width) {

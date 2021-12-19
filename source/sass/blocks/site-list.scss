@@ -37,6 +37,14 @@
   color: inherit;
   border-bottom: 1px solid $border-color;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 15px;
     padding: 21px 0;

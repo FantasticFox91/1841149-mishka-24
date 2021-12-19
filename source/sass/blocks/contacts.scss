@@ -29,44 +29,41 @@
 .contacts__map-container {
   position: relative;
   width: 100%;
-
-  iframe {
-    display: block;
-    width: 100%;
-
-    @media (min-width: $tablet-width) {
-      height: 457px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 527px;
-    }
-  }
+  height: 100%;
 }
 
 .contacts__map {
-  position: relative;
   display: flex;
+  min-width: 320px;
+  height: 455px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
+    height: 457px;
     margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 527px;
     grid-row: span 2;
     margin-bottom: 0;
-    padding-top: 8px;
+    margin-top: 8px;
     justify-content: start;
+  }
+
+  iframe {
+    position: relative;
   }
 }
 
 .contacts__marker {
-  @include pseudo(67px,100px,145px,138px);
-
+  @include pseudo(67px,100px);
+  top: 45%;
+  left: 50%;
   background: url("../../img/map-pin.svg");
+  transform: translate(-50%, -50%);
 }
 
 .contacts__link-button {
@@ -118,7 +115,26 @@
   text-decoration: none;
 
   &::after {
-    @include pseudo(167px,1px,21px,1px);
+    @include pseudo(167px,1px);
+    top: 21px;
+    left: 1px;
     background-color: $accent-color;
+  }
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.1;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      width: 204px;
+      top: 29px;
+    }
   }
 }

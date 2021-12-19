@@ -14,6 +14,7 @@
   padding-right: 45px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   &::after {
     content: "";
@@ -71,11 +72,14 @@
   order: 0;
 
   @media (min-width: $tablet-width) {
+    padding-top: 6px;
+    margin-left: -1px;
     order: 1;
   }
 
   @media (min-width: $desktop-width) {
     order: 2;
+    margin-left: -63px;
   }
 }
 
@@ -85,6 +89,14 @@
   font-weight: 400;
   color: $regular-text-color;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;

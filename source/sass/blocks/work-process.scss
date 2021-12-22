@@ -35,8 +35,9 @@
     display: grid;
     width: 1050px;
     grid-template-columns: 683px 1fr;
-    grid-template-rows: 170px 1fr;
+    grid-template-rows: min-content 1fr;
     column-gap: 78px;
+    row-gap: 26px;
     padding: 0;
   }
 }
@@ -95,7 +96,7 @@
 }
 
 .work-process__description {
-  padding: 35px 31px 0 33px;
+  padding: 29px 31px 0 33px;
 
   @media (min-width: $tablet-width) {
     padding: 23px 40px 0;

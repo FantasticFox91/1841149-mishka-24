@@ -27,8 +27,10 @@
   }
 }
 
-.developer-info__icon:hover {
-  path {
+.developer-info__icon {
+  fill: $accent-color;
+
+  &:hover {
     fill: $links-actions-color;
   }
 }

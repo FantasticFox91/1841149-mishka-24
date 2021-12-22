@@ -13,7 +13,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 334px 335px;
-    grid-template-rows: 167px 167px;
+    grid-template-rows: 167px 1fr;
     width: auto;
   }
 
@@ -34,6 +34,8 @@
 }
 
 .card__img {
+  display: block;
+
   @media (min-width: $tablet-width) {
     width: 334px;
     height: auto;
@@ -80,7 +82,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 115px;
-    padding-top: 23px;
+    padding-top: 27px;
     padding-right: 50px;
     padding-left: 28px;
   }
@@ -121,12 +123,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 28px;
+    padding-top: 33px;
     padding-left: 27px;
+    padding-bottom: 25px;
 
     &::before {
-      top: 4px;
-      left: 33px;
+      top: 9px;
+      left: 27px;
       width: 256px;
     }
   }
@@ -135,23 +138,25 @@
 .card__button {
   border: none;
   background-color: transparent;
+  opacity: 0.2;
   cursor: pointer;
 
   &:hover {
-    path {
-      fill: $accent-color;
-      opacity: 0.3;
-    }
+    fill: $accent-color;
+    opacity: 1;
   }
 
   &:active {
-    path {
-      fill: $accent-color;
-      opacity: 1;
-    }
+    fill: $accent-color;
+    opacity: 0.3;
   }
 
   @media (max-width: 767px) {
     padding: 0;
   }
+}
+
+.card__bottom {
+  display: grid;
+  grid-row: span 2;
 }

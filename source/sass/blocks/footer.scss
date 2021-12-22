@@ -30,16 +30,11 @@
   }
 
   &:hover {
-    path {
-      fill: $accent-color;
-    }
+    fill: $accent-color;
   }
 
   &:active {
     opacity: 0.3;
-
-    path {
-      fill: $accent-color;
-    }
+    fill: $accent-color;
   }
 }

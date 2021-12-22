@@ -26,10 +26,12 @@
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
+    max-width: 470px;
     margin-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 650px;
     margin-bottom: 36px;
   }
 }
@@ -72,6 +74,10 @@
   line-height: 30px;
   font-weight: 400;
   font-style: normal;
+}
+
+.reviews__author-info {
+  max-width: 500px;
 }
 
 .reviews__slider-control {

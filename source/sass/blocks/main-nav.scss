@@ -47,10 +47,15 @@
 .main-nav__list {
   @include lists();
   width: 100%;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     display: flex;
     width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 500px;
   }
 }
 

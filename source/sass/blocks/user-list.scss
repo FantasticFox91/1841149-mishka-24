@@ -11,6 +11,12 @@
   }
 }
 
+.user-list__item {
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid $border-color;
+  }
+}
+
 .user-list__link {
   display: block;
   text-decoration: none;
@@ -20,7 +26,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 32px 2px 33px 30px;
-    border-left: 1px solid $border-color;
     border-bottom: none;
   }
 
@@ -36,24 +41,26 @@
 .user-list__icon {
   margin-right: 24px;
   vertical-align: sub;
+  opacity: 0.2;
 
   @media (min-width: $tablet-width) {
     margin-right: 31px;
   }
+
+  &:hover {
+    opacity: 1;
+    fill: $accent-color;
+  }
 }
 
 .user-list__link:hover .user-list__icon {
-  path {
-    fill: $accent-color;
-    opacity: 1;
-  }
+  fill: $accent-color;
+  opacity: 1;
 }
 
 .user-list__link:active .user-list__icon {
-  path {
-    fill: $accent-color;
-    opacity: 0.3;
-  }
+  fill: $accent-color;
+  opacity: 0.3;
 }
 
 .user-list__text--hide {

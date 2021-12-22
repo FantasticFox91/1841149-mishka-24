@@ -10,6 +10,7 @@ checkClass(mainNavigation,"main-nav--close") ? toggleClass(mainNavigation,"main-
 
 /*
 Функция для проверки на перполнение контентом, взята с прошлого курса
+
 function getTextNodesIn(elem, opt_fnFilter) {
   var textNodes = [];
   if (elem) {

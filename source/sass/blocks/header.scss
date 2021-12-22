@@ -74,8 +74,10 @@
 
 .heeader__inner-heading {
   padding: 76px 0;
+  margin: 0 30px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     padding: 35px 20px 72px;
   }
 
@@ -86,6 +88,7 @@
 
 .header__list {
   @include lists();
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -105,7 +108,7 @@
 .header__link {
   position: relative;
   display: block;
-  padding: 24px 0 31px 30px;
+  padding: 24px 80px 31px 30px;
   font-size: 19px;
   color: $white-color;
   text-decoration: none;
@@ -121,13 +124,13 @@
     &:hover {
       transform: translateY(-5px);
 
-      path {
+      .header__icon {
         opacity: 0.7;
       }
     }
 
     &:active {
-      path {
+      .header__icon {
         opacity: 0.3;
       }
     }
@@ -158,6 +161,7 @@
   position: absolute;
   top: 23px;
   right: 36px;
+  opacity: 0.5;
 
   @media (min-width: $tablet-width) {
     top: 30px;
@@ -168,6 +172,7 @@
 .header__icon--toy {
   top: 21px;
   right: 27px;
+  fill: #149080;
 
   @media (min-width: $tablet-width) {
     top: 31px;

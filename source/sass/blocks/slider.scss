@@ -8,6 +8,7 @@
 
 .slider__link-button {
   @media (min-width: $tablet-width) {
+    max-width: 200px;
     position: absolute;
     right: 0;
     top: -4px;

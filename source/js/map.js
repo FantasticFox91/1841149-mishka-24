@@ -1,5 +1,4 @@
-document.querySelector("iframe").remove();
-document.querySelector(".contacts__marker").remove();
+document.querySelector(".contacts__img").remove();
 
 let map;
 
@@ -10,8 +9,10 @@ function initMap() {
     zoom: 16.6,
   });
 
-  new google.maps.Marker({
+  const image = "../img/map-pin.svg";
+  const myMarker = new google.maps.Marker({
     position: { lat: 59.93872031587833, lng: 30.32304628352043},
-    map: map,
+    map,
+    icon: image,
   });
 }

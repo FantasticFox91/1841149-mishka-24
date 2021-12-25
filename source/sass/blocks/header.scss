@@ -162,6 +162,7 @@
   top: 23px;
   right: 36px;
   opacity: 0.5;
+  fill: #149080;
 
   @media (min-width: $tablet-width) {
     top: 30px;
@@ -172,7 +173,6 @@
 .header__icon--toy {
   top: 21px;
   right: 27px;
-  fill: #149080;
 
   @media (min-width: $tablet-width) {
     top: 31px;

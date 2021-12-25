@@ -6,7 +6,7 @@
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 152×152 -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Мишка, Каталог товаров</title>
   </head>
   <body>
@@ -83,6 +83,10 @@
               <div class="card">
                 <a class="card__link" href="#">
                   <picture>
+                    <source media="(min-width: 1150px)" type="image/webp" srcset="img/bunny-funny-desktop.webp, img/bunny-funny-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/bunny-funny-tablet.webp, img/bunny-funny-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/bunny-funny.webp, img/bunny-funny@2x.webp 2x">
+
                     <source media="(min-width: 1150px)" srcset="img/bunny-funny-desktop.jpg, img/bunny-funny-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/bunny-funny-tablet.jpg, img/bunny-funny-tablet@2x.jpg 2x">
                     <img class="card__img" src="img/bunny-funny.jpg" srcset="img/bunny-funny@2x.jpg 2x" alt="зайчик-попрыгайчик." width="258" height="195">
@@ -97,7 +101,7 @@
                     <p class="card__price">1 200 руб.</p>
                     <button class="card__button" type="button">
                       <svg width="21" height="18">
-                        <use xlink:href="img/sprite.svg#icon-card-button"></use>
+                        <use xlink:href="img/sprite.svg#icon-cart"></use>
                       </svg>
                       <span class="visually-hidden">Добавить в корзину</span>
                     </button>
@@ -109,6 +113,10 @@
               <div class="card">
                 <a class="card__link" href="#">
                   <picture>
+                    <source media="(min-width: 1150px)" type="image/webp" srcset="img/laundry-basket-desktop.webp, img/laundry-basket-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/laundry-basket-tablet.webp, img/laundry-basket-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/laundry-basket.webp, img/laundry-basket@2x.webp 2x">
+
                     <source media="(min-width: 1150px)" srcset="img/laundry-basket-desktop.jpg, img/laundry-basket-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/laundry-basket-tablet.jpg, img/laundry-basket-tablet@2x.jpg 2x">
                     <img class="card__img" src="img/laundry-basket.jpg" srcset="img/laundry-basket@2x.jpg 2x" alt="корзинка для белья." width="258" height="195">
@@ -123,7 +131,7 @@
                     <p class="card__price">690 руб.</p>
                     <button class="card__button" type="button">
                       <svg width="21" height="18">
-                        <use xlink:href="img/sprite.svg#icon-card-button"></use>
+                        <use xlink:href="img/sprite.svg#icon-cart"></use>
                       </svg>
                       <span class="visually-hidden">Добавить в корзину</span>
                     </button>
@@ -135,6 +143,10 @@
               <div class="card">
                 <a class="card__link" href="#">
                   <picture>
+                    <source media="(min-width: 1150px)" type="image/webp" srcset="img/big-toy-basket-desktop.webp, img/big-toy-basket-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/big-toy-basket-tablet.webp, img/big-toy-basket-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/big-toy-basket.webp, img/big-toy-basket@2x.webp 2x">
+
                     <source media="(min-width: 1150px)" srcset="img/big-toy-basket-desktop.jpg, img/big-toy-basket-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/big-toy-basket-tablet.jpg, img/big-toy-basket-tablet@2x.jpg 2x">
                     <img class="card__img" src="img/big-toy-basket.jpg" srcset="img/big-toy-basket@2x.jpg 2x" alt="большая корзинка для игрушек." width="258" height="195">
@@ -149,7 +161,7 @@
                     <p class="card__price">1 500 руб.</p>
                     <button class="card__button" type="button">
                       <svg width="21" height="18">
-                        <use xlink:href="img/sprite.svg#icon-card-button"></use>
+                        <use xlink:href="img/sprite.svg#icon-cart"></use>
                       </svg>
                       <span class="visually-hidden">Добавить в корзину</span>
                     </button>
@@ -168,6 +180,10 @@
   <!-- Video player -->
             <div class="video">
               <picture>
+                <source media="(min-width: 1150px)" type="image/webp" srcset="img/video-preview-desktop.webp, img/video-preview-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/video-preview-tablet.webp, img/video-preview-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/video-preview.webp, img/video-preview@2x.webp 2x">
+
                 <source media="(min-width: 1150px)" srcset="img/video-preview-desktop.jpg, img/video-preview-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/video-preview-tablet.jpg, img/video-preview-tablet@2x.jpg 2x">
                 <img class="video__preview" src="img/video-preview.jpg" srcset="img/video-preview@2x.jpg 2x" alt="Превью видео." width="260" height="150">

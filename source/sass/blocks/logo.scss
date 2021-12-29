@@ -1,3 +1,7 @@
+.logo__link {
+  display: block;
+}
+
 .logo__link[href] {
   cursor: pointer;
 
@@ -7,6 +11,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  picture {
+    display: block;
   }
 }
 

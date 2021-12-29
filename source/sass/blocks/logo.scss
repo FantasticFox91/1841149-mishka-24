@@ -1,4 +1,5 @@
 .logo__link[href] {
+  display: block;
   cursor: pointer;
 
   &:hover {
@@ -7,6 +8,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  picture {
+    display: block;
   }
 }
 

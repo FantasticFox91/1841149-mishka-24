@@ -1,5 +1,8 @@
-.logo__link[href] {
+.logo__link {
   display: block;
+}
+
+.logo__link[href] {
   cursor: pointer;
 
   &:hover {

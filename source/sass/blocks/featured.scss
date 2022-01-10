@@ -51,7 +51,7 @@
 .featured__bottom {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 292px 1fr;
+    grid-template-columns: minmax(292px,1fr) 1fr;
     grid-template-rows: min-content 1fr min-content minmax(min-content, 52px);
     column-gap: 42px;
   }

@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 47px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,7 +28,7 @@
 
 .contacts-table__row {
   vertical-align: top;
-  min-height: 60px;
+  height: 60px;
 
   @media (min-width: $tablet-width) {
     width: 100%;

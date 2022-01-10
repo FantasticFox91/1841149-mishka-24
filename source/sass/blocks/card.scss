@@ -63,16 +63,38 @@
 }
 
 .card__price {
+  position: relative;
   margin: 0;
   font-size: 15px;
 
+  &::before {
+    @include pseudo(204px,1px);
+    top: -23px;
+    left: 0;
+    background-color: $border-color;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 17px;
+
+    &::before {
+      top: -24px;
+      left: 0;
+      width: 268px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: -24px;
+      left: 0;
+      width: 256px;
+    }
   }
 }
 
 .card__description {
-  padding: 21px 27px 0;
+  padding: 27px 27px 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 28px;
@@ -99,27 +121,13 @@
 }
 
 .card__cart {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 40px 25px 27px 27px;
-
-  &::before {
-    @include pseudo(204px,1px);
-    top: 18px;
-    left: 27px;
-    background-color: $border-color;
-  }
+  padding: 41px 25px 26px 27px;
 
   @media (min-width: $tablet-width) {
     padding-left: 33px;
-
-    &::before {
-      top: 93px;
-      left: 27px;
-      width: 268px;
-    }
   }
 
   @media (min-width: $desktop-width) {

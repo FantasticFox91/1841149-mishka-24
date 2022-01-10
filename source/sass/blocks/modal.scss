@@ -24,7 +24,7 @@
   @media (min-width: $tablet-width) {
     min-width: 566px;
     padding-top: 37px;
-    padding-bottom: 39px;
+    padding-bottom: 45px;
     border: 1px solid $modal-border-color;
   }
 }
@@ -111,6 +111,14 @@
   color: $regular-text-color;
 }
 
+.modal__input:focus + .modal__label {
+  background-color: rgba(68, 68, 68, 0.3);
+}
+
 .modal__input:checked + .modal__label {
   border-color: $accent-color;
+}
+
+.modal__input:hover + .modal__label {
+  border: 2px solid rgba(68, 68, 68, 0.3);
 }

@@ -75,7 +75,7 @@
     <main class="page-main">
 <!-- Header -->
       <header class="header">
-        <h1 class="header__heading heeader__inner-heading">Вязание на заказ</h1>
+        <h1 class="header__heading header__heading--inner">Вязание на заказ</h1>
       </header>
       <section class="order-form">
         <div class="container">
@@ -85,9 +85,8 @@
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <h2 class="form__heading visually-hidden">Форма заказа</h2>
 <!-- Block with radio buttons -->
-          <fieldset class="form__category form__category--type">
-            <div class="wrapper">
-              <legend class="form__category-name">Тип</legend>
+          <fieldset class="form__category form__category--type wrapper">
+              <h3 class="form__category-name">Тип</h3>
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__control">
@@ -104,12 +103,11 @@
                   </label>
                 </li>
               </ul>
-            </div>
           </fieldset>
 <!-- Block with checkboxes -->
-          <fieldset class="form__category form__category--color">
-            <div class="wrapper">
-              <legend class="form__category-name">Цвет</legend>
+          <div class="background-container">
+            <fieldset class="form__category form__category--color wrapper">
+              <h3 class="form__category-name">Цвет</h3>
               <ul class="form__list form__list--color">
                 <li class="form__item">
                   <label class="form__control form__control--checkboxes">
@@ -154,61 +152,57 @@
                   </label>
                 </li>
               </ul>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
 <!-- Block with personal information -->
-          <fieldset class="form__category form__category--personal">
-            <div class="wrapper">
-              <legend class="form__category-name">ФИО</legend>
-              <ul class="form__list form__list--personal">
-                <li class="form__item">
-                  <label class="form__control" for="user-first-name">Имя:</label>
-                  <input class="form__input form__input--text" type="text" name="user first name" id="user-first-name" placeholder="Введите ваше имя*">
-                </li>
-                <li class="form__item">
-                  <label class="form__control" for="user-last-name">Фамилия: </label>
-                  <input class="form__input form__input--text" type="text" name="user last name" id="user-last-name" placeholder="Укажите фамилию*">
-                </li>
-                <li class="form__item">
-                  <label class="form__control" for="patronym">Отчество: </label>
-                  <input class="form__input form__input--text" type="text" name="patronym" id="patronym" placeholder="Отчество, если желаете">
-                </li>
-              </ul>
-            </div>
+          <fieldset class="form__category form__category--personal wrapper">
+            <h3 class="form__category-name">ФИО</h3>
+            <ul class="form__list form__list--personal">
+              <li class="form__item">
+                <label class="form__control" for="user-first-name">Имя:</label>
+                <input class="form__input form__input--text" type="text" name="user first name" id="user-first-name" placeholder="Введите ваше имя*">
+              </li>
+              <li class="form__item">
+                <label class="form__control" for="user-last-name">Фамилия: </label>
+                <input class="form__input form__input--text" type="text" name="user last name" id="user-last-name" placeholder="Укажите фамилию*">
+              </li>
+              <li class="form__item">
+                <label class="form__control" for="patronym">Отчество: </label>
+                <input class="form__input form__input--text" type="text" name="patronym" id="patronym" placeholder="Отчество, если желаете">
+              </li>
+            </ul>
           </fieldset>
 <!-- Block with contacts infromation -->
-          <fieldset class="form__category form__category--contacts">
-            <div class="wrapper">
-              <legend class="form__category-name">Тел</legend>
-              <label class="form__control">
-                <input class="form__input form__input--text form__input--tel" type="tel" name="user phone number" placeholder="+7 XXX XXX XX XX*">
+          <div class="background-container">
+            <fieldset class="form__category form__category--contacts wrapper">
+              <label class="form__category-name" for="phone-number">Тел</label>
+              <div class="form__input-container">
+                <input class="form__input form__input--text form__input--tel" type="tel" name="phone-number" id="phone-number" placeholder="+7 XXX XXX XX XX*">
                 <span class="form__icon form__icon--tel">
                   <svg width="25" height="24">
                     <use xlink:href="img/sprite.svg#icon-tel"></use>
                   </svg>
                 </span>
-              </label>
-              <p class="form__category-name form__category-name--email">E-mail</p>
-              <label class="form__control">
-                <input class="form__input form__input--text form__input--email" type="email" name="user e-mail" placeholder="Ваш Email*">
+              </div>
+              <label class="form__control form__category-name" for="user-email">E-mail</label>
+              <div class="form__input-container">
+                <input class="form__input form__input--text form__input--email" type="email" name="user e-mail" id="user-email" placeholder="Ваш Email*">
                 <span class="form__icon form__icon--email">
                   <svg width="32" height="21">
                     <use xlink:href="img/sprite.svg#icon-mail"></use>
                   </svg>
                 </span>
-              </label>
-            </div>
-          </fieldset>
-<!-- Block for addition informatoion with textarea -->
-          <fieldset class="form__category form__category--comments">
-            <div class="wrapper">
-              <legend class="form__category-name">Доп</legend>
-              <textarea class="form__input form__input--textarea" name="comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
             </fieldset>
-            <div class="form__bottom container">
-              <p class="form__required-info">*Поля обязательны для заполнения</p>
-              <button class="form__button link-button" type="submit">Отправить заказ</button>
-            </div>
+          </div>
+<!-- Block for addition informatoion with textarea -->
+          <fieldset class="form__category form__category--comments wrapper">
+            <label class="form__category-name" for="comments">Доп</label>
+            <textarea class="form__input form__input--textarea" name="comments" id="comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <div class="form__bottom container">
+            <p class="form__required-info">*Поля обязательны для заполнения</p>
+            <button class="form__button link-button" type="submit">Отправить заказ</button>
           </div>
         </form>
       </section>
@@ -217,7 +211,7 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__logo logo">
-          <a class="logo__link footer__icon--interactive">
+          <a class="logo__link footer__icon">
             <svg width="102" height="34">
               <use xlink:href="img/sprite.svg#icon-footer-logo"></use>
             </svg>
@@ -225,7 +219,7 @@
         </div>
         <ul class="social-list">
           <li class="social-list__item">
-            <a href="https://www.instagram.com/htmlacademy/" class="social-list__link footer__icon--interactive">
+            <a href="https://www.instagram.com/htmlacademy/" class="social-list__link footer__icon">
               <svg class="social-list__icon" width="22" height="22">
                 <use xlink:href="img/sprite.svg#icon-ig"></use>
               </svg>
@@ -233,7 +227,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a href="https://www.facebook.com/htmlacademy" class="social-list__link footer__icon--interactive">
+            <a href="https://www.facebook.com/htmlacademy" class="social-list__link footer__icon">
               <svg class="social-list__icon" width="15" height="28">
                 <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
@@ -241,7 +235,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a href="https://twitter.com/htmlacademy_ru" class="social-list__link footer__icon--interactive">
+            <a href="https://twitter.com/htmlacademy_ru" class="social-list__link footer__icon">
               <svg class="social-list__icon" width="23" height="20">
                 <use xlink:href="img/sprite.svg#icon-tw"></use>
               </svg>
@@ -251,7 +245,7 @@
         </ul>
         <div class="developer-info">
           <p class="developer-info__text">Разработано</p>
-          <a class="developer-info__link footer__icon--interactive" href="#">
+          <a class="developer-info__link footer__icon" href="#">
             <svg class="developer-info__icon" width="27" height="35">
               <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>

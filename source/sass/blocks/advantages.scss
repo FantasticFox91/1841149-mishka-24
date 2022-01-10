@@ -15,10 +15,15 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 235px 1fr;
     grid-template-rows: repeat(3, 1fr);
     row-gap: 27px;
+    column-gap: 100px;
     grid-auto-flow: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 115px;
   }
 }
 

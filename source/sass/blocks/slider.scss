@@ -33,7 +33,7 @@
 }
 
 .slider__nav-button {
-  width: 100%;
+  width: 50%;
   height: 52px;
   background: url("../img/slider-arrow.svg") no-repeat;
   background-position: center center;
@@ -59,7 +59,8 @@
   border-right: none;
 
   @media (min-width: $tablet-width) {
-    width: 100px;
+    width: 50px;
+    margin-left: 37px;
     border: none;
   }
 }

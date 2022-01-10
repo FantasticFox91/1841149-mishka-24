@@ -18,11 +18,11 @@
     margin: 0 auto;
     max-width: $desktop-width;
   }
+}
 
-  .container {
-    @media (min-width: $desktop-width) {
-      padding: 0;
-    }
+.contacts__container {
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -44,7 +44,7 @@
 
   @media (min-width: $tablet-width) {
     height: 457px;
-    margin-bottom: 55px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  background-color: #f9f9f9;
+  background-color: #F9F9F9;
 
   @media (min-width: $tablet-width) {
     &::after {
@@ -44,6 +44,7 @@
   @media (min-width: $desktop-width) {
     min-height: 562px;
     background: url("../img/header-bg-desktop.jpg") no-repeat center;
+    background-position-y: -65px;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/header-bg-desktop@2x.jpg") no-repeat center;
@@ -72,7 +73,7 @@
   }
 }
 
-.heeader__inner-heading {
+.header__heading--inner {
   padding: 76px 0;
   margin: 0 30px;
 

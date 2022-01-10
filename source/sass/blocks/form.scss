@@ -335,9 +335,8 @@
 .form__category--personal {
   margin-bottom: 28px;
 
-    @media (min-width: $tablet-width) {
-      margin-bottom: 45px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
   }
 
   .form__category-name {
@@ -363,15 +362,14 @@
       padding-right: 27px;
       max-width: 400px;
     }
-
   }
 
   .form__input {
-
     @media (min-width: $tablet-width) {
       padding: 16px 0 15px 18px;
     }
   }
+}
 
 .form__category--contacts {
   margin-bottom: 35px;

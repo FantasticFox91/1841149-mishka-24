@@ -112,10 +112,14 @@
 }
 
 .modal__input:focus + .modal__label {
-  background-color: rgba(68, 68, 68, 0.3);
+  border-color: $accent-color;
 }
 
 .modal__input:checked + .modal__label {
+  border-color: $accent-color;
+}
+
+.modal__input:checked:hover + .modal__label {
   border-color: $accent-color;
 }
 

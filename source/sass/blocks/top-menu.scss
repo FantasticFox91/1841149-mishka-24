@@ -3,7 +3,7 @@
   border-bottom: 1px solid $border-color;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, $white-color 88px, #e1e1e1 89px, #f9f9f9 90px);
+    background: linear-gradient(to bottom, $white-color 88px, #d9d9d9 89px, transparent 90px);
     border-bottom: none;
   }
 }

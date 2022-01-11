@@ -28,6 +28,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-top: -64px;
+    padding-top: 64px;
     min-height: 560px;
     align-items: stretch;
     background: url("../img/header-bg-tablet.jpg") no-repeat center;
@@ -75,11 +77,12 @@
 
 .header__heading--inner {
   padding: 76px 0;
-  margin: 0 30px;
+  margin: 0;
+  background-color: $wave-decorative-color;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 35px 20px 72px;
+    margin-top: -63px;
+    padding: 98px 20px 72px;
   }
 
   @media (min-width: $desktop-width) {

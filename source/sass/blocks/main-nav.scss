@@ -104,9 +104,11 @@
   }
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: block;
     padding: 18px 0 20px;
     order: 5;
+    z-index: 1;
   }
 }
 

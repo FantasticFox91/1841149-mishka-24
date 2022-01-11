@@ -3,9 +3,11 @@
   border-top: 1px solid $border-color;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     order: 3;
     margin-top: 0;
     border-top: none;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
